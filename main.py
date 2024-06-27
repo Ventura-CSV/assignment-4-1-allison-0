@@ -3,12 +3,12 @@ def main():
     while True:
         start = input('Enter the starting letter: ')
         end = input('Enter the starting letter: ')
-
-    """
-    ########################################
-    Code Your Program here
-    ########################################
-    """
+        if start.isalpha() and end.isalpha():
+            startNum = ord(start)
+            endNum = ord(end)
+        else:
+            print("Input must be a letter of the alphabet.")
+            break
 
     print(*result)
 
