@@ -8,7 +8,9 @@ def main():
             endNum = ord(end)
             if startNum < endNum: # Check if num representing start input is less than num representing end
                 for i in range(startNum,endNum):
-                    print(chr(i))
+                    result.append(chr(i))
+                else:
+                    break
             else:
                 print("Start must be less than end.")
                 break
@@ -16,7 +18,6 @@ def main():
             print("Input must be a letter of the alphabet.")
             break
     print(*result)
-
     ########################################
     # Do not delete the return statement
     ########################################
