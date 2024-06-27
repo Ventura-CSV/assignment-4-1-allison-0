@@ -5,7 +5,7 @@ def main():
         end = input('Enter the starting letter: ')
         if start.isalpha() and end.isalpha(): # Check if inputs are letters in the alphabet
             startNum = ord(start)
-            endNum = ord(end)
+            endNum = (ord(end) + 1)
             if startNum < endNum: # Check if num representing start input is less than num representing end
                 for i in range(startNum,endNum):
                     result.append(chr(i))
