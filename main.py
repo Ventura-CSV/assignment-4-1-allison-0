@@ -13,10 +13,10 @@ def main():
                     break
             else:
                 print("Start must be less than end.")
-                break
+                continue
         else:
             print("Input must be a letter of the alphabet.")
-            break
+            continue
     print(*result)
     ########################################
     # Do not delete the return statement
